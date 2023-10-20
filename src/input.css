@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        /* Primary */
+        /* Text */
+
+        --very-dark-desaturated-blue: 238deg 29% 16%;
+        --soft-red: 14deg 88% 65%;
+
+        /* Gradient */
+        /* Background gradient */
+
+        --soft-violet: 273deg 75% 66%;
+        --soft-blue: 240deg 73% 65%;
+
+        /* Neutral */
+        /* Text */
+
+        --very-dark-grayish-blue: 237deg 12% 33%;
+        --dark-grayish-blue: 240deg 6% 50%;
+
+        /* Dividers */
+
+        --light-grayish-blue: 240deg 5% 91%;
+    }
+
+    .desktop {
+        background-image: url(../images/illustration-woman-online-desktop.svg),
+            url(../images/bg-pattern-desktop.svg);
+        background-position: right 50px bottom 90px, right 50px bottom -140px;
+        background-repeat: no-repeat;
+    }
+
+    .details {
+        transition: height 300ms ease-in-out;
+        overflow: hidden;
+    }
+
+    details summary {
+        transition: color 300ms ease-in-out;
+    }
+
+    details summary:after {
+        transition: 200ms linear;
+    }
+
+    details[open] summary:after {
+        transform: rotate(180deg);
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}

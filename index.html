@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" class="relative">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="front-end mentor FAQ accordion card"
+        />
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+
+        <title>Frontend Mentor | FAQ Accordion Card</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link href="/dist/output.css" rel="stylesheet" />
+    </head>
+    <body
+        class="h-screen flex flex-col justify-between items-center bg-gradient-to-b from-soft-violet to-soft-blue font-Kumnh text-very-dark-desaturated-blue overflow-y-hidden"
+    >
+        <main
+            class="w-[330px] bg-white flex flex-col items-center justify-center my-auto rounded-3xl md:w-[920px] md:min-h-[510px] md:flex md:flex-row z-10 shadow-2xl shadow-very-dark-grayish-blue/50"
+        >
+            <section class="flex md:flex-1 md:h-full">
+                <div class="mobile md:hidden translate-y-[-38%] px-3 -mb-52">
+                    <img
+                        class="max-h-full"
+                        src="./images/illustration-woman-online-mobile.svg"
+                        alt="ilustration of a woman using a giant computer"
+                    />
+                    <img
+                        class="translate-y-[-70%]"
+                        src="./images/bg-pattern-mobile.svg"
+                        alt="shadow for the woman ilustration"
+                    />
+                </div>
+                <div
+                    class="desktop hidden md:flex md:w-full md:h-full relative"
+                >
+                    <img
+                        class="absolute top-48 -left-24 animate-slidex"
+                        src="./images/illustration-box-desktop.svg"
+                        alt="a right-to-left sliding box @ on it"
+                    />
+                </div>
+            </section>
+
+            <section class="w-full md:flex-1 px-6 py-12 md:pt-7">
+                <section class="text-center mb-2 md:mb-4 md:text-left">
+                    <h1
+                        class="text-[34px] font-bold text-very-dark-desaturated-blue"
+                    >
+                        FAQ
+                    </h1>
+                </section>
+                <section
+                    class="flex flex-col justify-center items-start text-very-dark-grayish-blue text-[13px] w-[282px] md:w-[350px] details-group"
+                >
+                    <details
+                        class="w-full border-b border-light-grayish-blue relative details"
+                    >
+                        <summary
+                            class="list-none cursor-pointer hover:text-soft-red hover:duration-300 duration-300 after:content-[url('/images/icon-arrow-down.svg')] after:right-0 after:absolute after:text-very-dark-grayish-blue details-summary py-4 tracking-wide"
+                        >
+                            How many team members can I invite?
+                        </summary>
+
+                        <div class="details-content -mt-2">
+                            <p
+                                class="text-dark-grayish-blue text-[12px] w-[90%]"
+                            >
+                                You can invite up to 2 additional users on the
+                                Free plan. There is no limit on team members for
+                                the Premium plan.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details
+                        class="w-full border-b border-light-grayish-blue relative details"
+                    >
+                        <summary
+                            class="list-none cursor-pointer hover:text-soft-red hover:duration-300 duration-300 after:content-[url('/images/icon-arrow-down.svg')] after:right-0 after:absolute after:text-very-dark-grayish-blue details-summary py-4 tracking-wide"
+                        >
+                            What is the maximum file upload size?
+                        </summary>
+                        <div class="details-content -mt-2">
+                            <p
+                                class="text-dark-grayish-blue text-[12px] pr-4 tracking-wide"
+                            >
+                                No more than 2GB. All files in your account must
+                                fit your allotted storage space.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details
+                        class="w-full border-b border-light-grayish-blue relative details"
+                    >
+                        <summary
+                            class="list-none cursor-pointer hover:text-soft-red hover:duration-300 duration-300 after:content-[url('/images/icon-arrow-down.svg')] after:right-0 after:absolute after:text-very-dark-grayish-blue details-summary py-4 tracking-wide"
+                        >
+                            How do I reset my password?
+                        </summary>
+                        <div class="details-content -mt-2">
+                            <p
+                                class="text-dark-grayish-blue text-[12px] w-[90%]"
+                            >
+                                Click “Forgot password” from the login page or
+                                “Change password” from your profile page. A
+                                reset link will be emailed to you.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details
+                        class="w-full border-b border-light-grayish-blue relative details"
+                    >
+                        <summary
+                            class="list-none cursor-pointer hover:text-soft-red hover:duration-300 duration-300 after:content-[url('/images/icon-arrow-down.svg')] after:right-0 after:absolute after:text-very-dark-grayish-blue details-summary py-4 tracking-wide"
+                        >
+                            Can I cancel my subscription?
+                        </summary>
+                        <div class="details-content -mt-2">
+                            <p
+                                class="text-dark-grayish-blue text-[12px] w-[90%]"
+                            >
+                                Yes! Send us a message and we&apos;ll process
+                                your request no questions asked.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details
+                        class="w-full border-b border-light-grayish-blue relative details"
+                    >
+                        <summary
+                            class="list-none cursor-pointer hover:text-soft-red hover:duration-300 duration-300 after:content-[url('/images/icon-arrow-down.svg')] after:right-0 after:absolute after:soft-violet-500 via-90% details-summary py-4 tracking-wide"
+                        >
+                            Do you provide additional support?
+                        </summary>
+                        <div class="details-content -mt-2">
+                            <p
+                                class="text-dark-grayish-blue text-[12px] w-[90%]"
+                            >
+                                Chat and email support is available 24/7. Phone
+                                lines are open during normal business hours.
+                            </p>
+                        </div>
+                    </details>
+                </section>
+            </section>
+        </main>
+        <footer
+            class="w-full min-h-[3rem] text-very-dark-desaturated-blue text-center via-90% mt-[-4rem] mb-2 z-0"
+        >
+            Challenge by
+            <a
+                class="hover:text-soft-red duration-300"
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by
+            <a
+                class="hover:text-soft-red duration-300"
+                href="https://github.com/M-its"
+                target="_blank"
+                >Mitsrael Souza</a
+            >.
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
