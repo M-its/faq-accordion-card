@@ -915,6 +915,21 @@ p {
   content: var(--tw-content);
 }
 
+.after\:content-\[url\(\'images\/icon-arrow-down\.svg\'\)\]::after {
+  --tw-content: url('images/icon-arrow-down.svg');
+  content: var(--tw-content);
+}
+
+.after\:content-\[url\(\'\.\.images\/icon-arrow-down\.svg\'\)\]::after {
+  --tw-content: url('..images/icon-arrow-down.svg');
+  content: var(--tw-content);
+}
+
+.after\:content-\[url\(\'\.\/\.\.\/images\/icon-arrow-down\.svg\'\)\]::after {
+  --tw-content: url('./../images/icon-arrow-down.svg');
+  content: var(--tw-content);
+}
+
 .hover\:text-soft-red:hover {
   color: hsl(var(--soft-red));
 }
